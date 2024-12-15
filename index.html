@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps Clone - Bonus Features</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Google Maps Clone</h1>
+  
+  <!-- Input Section for Latitude and Longitude -->
+  <div class="controls">
+    <label for="lat1">Origin Latitude:</label>
+    <input id="lat1" type="text" placeholder="Enter Origin Latitude" required>
+    <label for="lng1">Origin Longitude:</label>
+    <input id="lng1" type="text" placeholder="Enter Origin Longitude" required><br><br>
+    
+    <label for="lat2">Destination Latitude:</label>
+    <input id="lat2" type="text" placeholder="Enter Destination Latitude" required>
+    <label for="lng2">Destination Longitude:</label>
+    <input id="lng2" type="text" placeholder="Enter Destination Longitude" required><br><br>
+    
+    <button id="findPathBtn">Find Path</button>
+  </div>
+
+  <!-- Search History Dropdown -->
+  <div class="history">
+    <label for="searchHistory">Search History:</label>
+    <select id="searchHistory">
+      <option value="">Select a previous search</option>
+    </select>
+  </div>
+
+  <!-- Directions List -->
+  <div id="directions"></div>
+
+  <!-- Map Section -->
+  <div id="map" style="height: 500px;"></div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
